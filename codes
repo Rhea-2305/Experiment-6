@@ -1,0 +1,196 @@
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//for loop
+#include <iostream>
+using namespace std;
+int main(){
+    int n, i;
+    cout<<"Enter the number you want to print till: ";
+    cin>>n;
+    for(i=0;i<n;i++){
+        cout<<i+1<<" ";
+    }
+    return 0;
+}
+
+
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//sum of no.s
+#include <iostream>
+using namespace std;
+int main(){
+    int n, i, sum=0;
+    cout<<"Numbers do you want the sum for: ";
+    cin>>n;
+    for(i=0;i<n;i++){
+        sum=sum+i;
+    }
+    
+    cout<<"The sum of first "<<n<<" natural numbers is: "<<sum;
+    return 0;
+}
+
+
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//asterik pattern
+#include <iostream>
+using namespace std;
+int main(){
+    int i, j, k=0, n;
+    cout<<"Enter number of rows: ";
+    cin>>n;
+/**
+//Pyramid
+    for(i=1;i<=n;i++){
+        for(j=1;j<=(n-i);j++){
+            cout<<" ";
+        }
+        for(k=0;k!=(i-1);k++){
+            cout<<"* ";
+        }
+        k=0;
+        cout<<endl;
+    }
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+**/
+//Odd numbered pyramid
+    for(i=0;i<n;i++){
+        for(j=n-1;j>i;j--){
+            cout<<"  ";
+        }
+        for(k=0;k<(2*(i)+1);k++){
+            cout<<"* ";
+        }
+        k=0;
+        cout<<endl;
+    }
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+
+/**
+//Parallel Lines
+    for(i=1;i<=n;i++){
+        for(j=0;j<=n;j++){
+            cout<<" * ";
+        }
+             
+        cout<<endl;
+    }
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+    
+//lines
+    for(i=1;i<=n;i++){
+        while(k!=(i-1)){
+            cout<<"* ";
+            k++;
+        }
+        k=0;
+        cout<<endl;
+    }**/
+
+}
+
+
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//floyd series
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter number of rows: ";
+    cin>>n;
+    int i, k,o=1;
+    for(i=0;i<n;i++){
+        for(k=0;k<(i+1);k++){
+            cout<<o<<" ";
+            o++;
+        }
+        k=0;
+        cout<<endl;
+    }
+return 0;
+}
+
+
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//floyd  alphabets
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"Enter number of rows: ";
+    cin>>n;
+    int i, k;
+    char o='A';
+    for(i=0;i<n;i++){
+        for(k=0;k<(i+1);k++){
+            cout<<o<<" ";
+            o++;
+        }
+        k=0;
+        cout<<endl;
+    }
+return 0;
+}
+
+
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//while loop
+#include <iostream>
+using namespace std;
+int main(){
+    int n, i=1;
+    cout<<"Enter the number you want to print till: ";
+    cin>>n;
+    while(i<=n){
+        cout<<(i)<<" ";
+        i++;
+    }
+    return 0;
+}
+
+
+//Rhea Kulkarni
+//ENTC B1
+//23070123106
+//password validation
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+   int i=1;
+   string password ="siu",newpassword;
+   do
+   {
+    cout<<"Enter password: ";
+    cin>>newpassword;
+     if(newpassword==password)
+     {
+      cout<<"Success";
+      break;
+     }
+     else
+     {
+      cout<<"Try again!"<<endl;
+     }
+     i++;
+   } while (i);
+   
+}
